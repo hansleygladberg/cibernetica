@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue-color: #12143D;
+    --blue-claro: #A61CF5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: 8rem;
+}
+
+body{
+    font-family: 'poppins';
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 25px 25px 30 50;
+}
+.visible{right: 0;}
+.visible1{ visibility: hidden;}
+.visible2{ visibility: hidden;}
+.visible3{ visibility: hidden;}
+.visible4{ visibility: hidden;}
+
+.animated-div{
+    position: absolute;
+    right: -100%;
+    transition: all 1s ease;
+}
+
+/* WHATSAPP*/
+
+#float-whatsapp-btn {
+    background-image: url(../imagens/clientes/);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    display: block;
+}
+  
+  #float-whatsapp-btn:hover {
+    transform: translateY(-8px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+  
+.fa-whatsapp img{
+    width: 70px;
+    height: 70px;
+}
+
+/* FIM WHATSAPP */
+
+
+/* TOPO */
+
+header{
+    background:linear-gradient(90deg, #12143D 32.03%, #12143D 36.52%, #12143D 41.2%, #12143D 46.26%, #12143D 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos{
+    display: flex;
+    padding: 8px 85px;
+    color: rgb(196, 193, 193);
+    justify-content: space-between;
+    min-width: 850px;
+    border-bottom: 1px solid #ffffff11;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.infos svg{
+    width: 12px;
+    float: left;
+    margin: 4px 5px 0px 0px;
+}
+
+.infos a{
+    color: rgb(196, 193, 193);
+    text-decoration: none;
+}
+
+.infos a:hover{
+    color: #A7E4FA;
+    text-decoration: none;
+}
+
+#menu{
+    display: flex;
+    margin-right: 30px;
+    justify-content: space-around;
+}
+
+#menu a{
+    color: #fff;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    color: #A7E4FA;
+}
+
+#header{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+#header img{
+    height: 55px;
+}
+
+#div-btn{
+    display: none;
+}
+
+#foto_header{
+    width: 100%;
+    height: 570px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    background-image: url("../imagens/foto_topo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#foto_header h1{
+    font-size: 48px;
+}
+
+#foto_header h4{
+    font-size: 28px;
+    font-weight: 100;
+}
+
+#foto_header h3{
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+#foto_header a:nth-child(even){
+    background-color: #ffffffcc;
+    width: 330px;
+    padding: 20px;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 30px auto;
+    transition-duration: 0.2s;
+}
+
+#foto_header a:hover:nth-child(even){
+    background-color: #fff;
+    color: #252868;
+    font-weight: 600;
+}
+
+#foto_header a:nth-child(odd){
+    text-decoration: none;
+    width: 55px;
+    margin: 5px auto 0px auto;
+    transition-duration: 0.3s;
+}
+
+#foto_header a:hover:nth-child(odd){
+     width: 100px;
+     width: 65px;
+     margin: -5px auto 0px auto;
+}
+
+/* FIM TOPO */
+
+
+/* EMPRESA */
+
+section.empresa{
+    display: flex;
+    padding: 90px 30px;
+}
+
+section .texto{
+    width: 60%;
+    max-height: 690px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 70px;
+}
+
+section .texto a{
+    background-color: #ffffff;
+    text-align: center;
+    color: #A61CF5;
+    width: 360px;
+    padding: 25px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 50px 0px 0px 0px;
+    transition-duration: 0.2s;
+    border: 1px solid #A61CF5;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+section .texto a:hover{
+    background-color: #fdf9f9;
+    margin: 45px 0px 0px 0px;
+}
+
+section .texto h1{
+    font-size: 37px;
+    font-weight: 300;
+    line-height: 116.5%;
+}
+
+section .texto h4{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #444444;
+    line-height: 150.19%;
+}
+
+section .texto h4 p{
+    margin-top: 20px;
+}
+
+section .imagens-conheca{
+    width: 40%;
+    display: flex;
+}
+
+section .imagens-conheca img{
+    width: 555px;
+}
+
+/* FIM EMPRESA */
+
+/* SERVICOS */
+
+section#servicos{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+
+section #container-titulo-servicos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 5px 5px 10 ;
+}
+
+.titulo-serv{
+    border: 1px solid rgb(235, 233, 233);
+    width: 450px;
+    height: 90px;
+    border-radius: .8rem .8rem 0 0;
+    border-bottom: none;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 25px 21px;
+    background-size: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: padding .3s ease-in;
+}
+
+.titulo-serv.btnativo{
+    z-index: 1000;
+    background-color:#A61CF515;
+    border-bottom: 2px solid var(--blue-color);
+}
+
+.titulo-serv:hover{
+    padding-right: 60px; 
+}
+
+.bg-serv-desktop{
+    background-image: url(../imagens/icons/pc.svg);
+    background-repeat: no-repeat;
+    background-position: 30px 21px;
+}
+
+.bg-serv-desktop:hover{
+    background-image: url(../imagens/icons/pc-display.svg);
+    background-position: 18px 21px;
+}
+
+.bg-serv-notebook{
+    background-image: url(../imagens/icons/laptop.svg);
+    background-repeat: no-repeat;
+}
+
+.bg-serv-notebook:hover{
+    background-image: url(../imagens/icons/laptop-fill.svg);
+}
+
+.bg-serv-impressora{
+    background-image: url(../imagens/icons/printer.svg);
+    background-repeat: no-repeat;
+    background-position: 25px 21px;
+    background-size: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bg-serv-impressora:hover{
+    background-image: url(../imagens/icons/printer-fill.svg);
+}
+
+.descricao-serv{
+    width: 1390px;
+    border-radius: 0 0 .8rem .8rem;
+    font-size: 1.3rem;
+    padding: 50px;
+    margin-bottom: 160px;
+    outline: 2px solid rgb(235, 233, 233);
+    background-color: #A61CF515;
+    box-shadow: 1px 2px 22px 5px rgba(0, 0, 0, 0.041);
+    
+}
+
+
+/* FIM SERVICOS */
+
+/* REVIEW */
+
+h1.titulo{
+    text-align: center;
+    background-color: #A7E4FA20;
+}
+
+section.review{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 79%;
+    display: flex;
+    gap: 20px;
+    padding: 20px 10px 30px 10px;
+    justify-content: center;
+}
+
+section.review .box-review{
+    background-color: #f6f6faa1;
+    min-width: 400px;
+    max-width: 480px;
+    min-height: 300px;
+    border: 1px solid rgb(233, 227, 227);
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #00000010;
+    margin: 0 10px;
+}
+
+section.review .box-review .top-review{
+    display: flex;
+    margin-top: 7px;
+    justify-content: center;
+}
+
+
+section.review .box-review .top-review img.foto-review{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+section.review .box-review .top-review .nome-review{
+    margin: 0px 0px 0px 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+section.review .box-review .top-review .nome-review p{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+section.review .box-review .top-review .nome-review p:first-child{
+    font-size: 14px;
+}
+
+section.review .box-review .txt-review p{
+    padding: 16px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+}
+
+section.localizacao{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section.localizacao iframe{
+    margin-top: 10px;
+    width: 1500px;
+    height: 600px;
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+}
+
+
+/* FOOTER  */
+
+footer {
+    background-color: var(--blue-color);
+    color: #fff;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer-right{
+    width: 40%;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right h4{
+    font-size: .9rem;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+.footer-right h4 span{
+    font-size: 1.5rem;
+}
+
+.footer-right img{
+    width: 50px;
+    padding: 10px;
+}
+
+.footer-left p,.footer .footer-left img{
+    font-size: .8rem;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.footer-left{
+    border-right: 2px solid #ccc;
+    flex-direction: column;
+    width: 40%;
+    height: 200px;
+    padding: 20px;
+}
+.footer-right .row-footer{
+    display: flex;
+    align-items: center;
+}

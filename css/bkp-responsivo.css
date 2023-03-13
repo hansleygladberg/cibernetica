@@ -1,0 +1,347 @@
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1050px) {
+
+    .infos{
+        display: flex;
+        padding: 8px 85px;
+        min-width: 700px;
+        border-bottom: 1px solid #ffffff11;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    #menu{
+        display: block;
+        flex-direction: column;   
+        visibility: hidden;  
+        /* border: 1px solid rgb(247, 255, 249); */
+    }
+
+    #menu.active{
+        background-color: var(--blue-color);
+        transition-duration: 0.3s;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        visibility: visible;
+        padding: 50px 0px 170px 0px;
+        gap: 1px;
+        width: 100%;
+        height: 100%;
+        top: 115px;
+        z-index: 100;
+    }
+
+     .hamburguer{
+        width: 40px;
+        height: 40px;
+        border-top: 3px solid #fff;
+        gap: .5rem;
+        position: relative;
+        top: 10px;
+        }
+    
+    .hamburguer::after, .hamburguer::before{
+        content: '';
+        width: 30px;
+        height: 3px;
+        display: block;
+        background-color: #fff;
+        margin-top: 10px;
+        position: relative;
+        transition: 0.3s;
+    
+    }
+
+    #div-btn{
+        width: 40px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px 20px 0; 
+    }
+
+    #btn-mobile{
+        width: 30px;
+        height: 30px;
+        margin: 15px 15px;
+        cursor: pointer;
+        display: flex;
+        outline: none;
+        border: none;
+        background: none;
+    }
+
+    #btn-mobile.active .hamburguer{
+        border-top-color: transparent;
+        position: relative;
+        display: flex;
+    }
+
+    #btn-mobile.active .hamburguer::after{
+        transform: rotate(135deg);    
+        top: 6px;
+        right: 19px;
+        width: 50px;
+        
+    }
+
+    #btn-mobile.active .hamburguer::before{
+        transform: rotate(-135deg);
+        width: 50px;
+        right: -5px;
+        top: 6px;
+    }
+
+    #foto_header h1{
+        font-size: 38px;
+    }
+    
+    #foto_header h4{
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    #foto_header h3{
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+    .empresa{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section .empresa{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .texto{
+        width: 100%;
+        max-height: 800px;
+    }
+
+    section .imagens-conheca{
+        width: 100%;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    section .texto a{
+        width: 360px;
+        padding: 25px 30px;
+        margin: 40px auto 0px auto;
+        text-align: center;
+    }
+
+    section .texto a:hover{
+        background-color: #f3efef;
+        margin: 40px auto 0px auto;
+    }
+
+    section.review{
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    header{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #header{
+        box-sizing: border-box;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #header img{
+        margin: 0;
+        padding-left: 20px;
+        height: 45px;
+    }
+
+    #div-btn{
+        width: 40px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px 20px 0; 
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #menu.active{
+        background-color: var(--blue-color);
+        transition-duration: 0.3s;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        visibility: visible;
+        gap: 1px;
+        width: 100%;
+        height: 100%;
+        top: 95px;
+        left: 0;
+        z-index: 100;
+    }
+
+     .hamburguer{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        border-top: 3px solid #fff;
+        }
+    
+    .hamburguer::after, .hamburguer::before{
+        content: '';
+        height: 3px;
+        transition: transform ease-in 0.3s;
+    }
+    
+    #btn-mobile{
+        width: 20px;
+        cursor: pointer;
+        padding-right: 10px;
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    #btn-mobile.active .hamburguer{
+        border-top-color: transparent;
+        position: relative;
+    }
+
+    #btn-mobile.active .hamburguer::after{
+        transform: rotate(135deg);
+        width: 3px;
+        height: 30px;
+        position: absolute;
+        right: -2px;
+        top: -15px;
+                
+    }
+
+    #btn-mobile.active .hamburguer::before{
+        transform: rotate(-135deg);
+        width: 3px;
+        height: 30px;
+        position: absolute;
+        left: 9px;
+        top: -15px;
+    }
+
+    .infos{
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    #foto_header{
+        padding: 30px;
+    }
+
+    #foto_header h1{
+        font-size: 28px;
+    }
+    
+    #foto_header h4{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    
+    #foto_header h3{
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+    #foto_header a:nth-child(even){
+        background-color: #ffffffcc;
+        border-radius: 35px;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        transition-duration: 0.2s;
+    }
+    
+    #foto_header a:hover:nth-child(even){
+        background-color: #fff;
+        color: #252868;
+        font-weight: 600;
+    }
+
+    section .texto{
+        width: 100%;
+        max-height: 1200px;
+    }
+
+    section .imagens-conheca{
+        width: 90%;
+        height: auto;
+        /* margin-top: 40px; */
+        justify-content: center;
+    }
+
+    section .imagens-conheca img{
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    section.empresa{
+        display: flex;
+        padding: 90px 30px;
+    }
+    
+    section .texto{
+        padding: 0px 10px 0px 10px;
+    }
+
+    section .texto a{
+        max-width: 290px;
+        padding: 25px 30px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
+        margin-top: 50px;
+        border: 1px solid #A61CF5;
+    }
+    
+    section.review{
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    section.review .box-review{
+        min-width: 300px;
+        max-width: 480px;
+        min-height: 300px;
+        max-height: 450px;
+    }
+
+}

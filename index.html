@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cibernética Informática</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens//favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- APARECE ELEMENTOS AO ROLAR A TELA  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- SLICK para os slides na seção review  -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <!-- ANIMACAO DAS DIVS DESLISANDO  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- FIM ANIMACAO DAS DIVS DESLISANDO  -->
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
+    <script src="script.js" defer></script>
+
+    
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78TRG1F175"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-78TRG1F175');
+</script>
+
+<body>
+    <header>
+        <div class="infos">
+            <span>Av. I, 790 - conj. Prefeito José Walter - Fortaleza/CE</span>
+            <span>
+                <a href="http://instagram.com/ciberneticainformatica" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                            fill="rgb(196, 193, 193)" />
+                    </svg>
+                    @ciberneticainformatica
+                </a>
+            </span>
+            <span>
+                <a href="https://wa.me/558532913675" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                            fill="rgb(196, 193, 193)" />
+                    </svg>
+                    (85) 3291-3675
+                </a>
+            </span>
+        </div>
+
+        <div id="header">
+            <img src="imagens/logo.svg" alt="Cibernética Informática">
+            <nav id="menu">
+                <a href="">&rsaquo; Início</a>
+                <a href="#empresa">&rsaquo; Sobre a empresa</a>
+                <a href="#servicos">&rsaquo; Serviços</a>
+                <a href="#section-reviews">&rsaquo; Avaliações</a>
+                <a href="">&rsaquo; Localização</a>
+                <a href="">&rsaquo; Contato</a>
+            </nav>
+
+            <div id="div-btn">
+                <button id="btn-mobile">
+                    <span class="hamburguer"></span>
+                </button>
+            </div>
+        </div>
+        <div id="foto_header">
+            <h1 class="visible1">Conserto ● Otimização ● Upgrade</h1>
+            <h4 class="visible2">Experiência, agilidade, transparência e muita paixão.</h4>
+            <h3 class="visible3">28 anos de experiência em conserto e montagem de computadores.</h3>
+            <a href="#empresa">Conheça nossa empresa</a>
+            <a href="#empresa">
+                <svg viewBox="0 0 51 51" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="path-1-inside-1_131_4" fill="white">
+                        <path
+                            d="M1.52018 28.6311C-0.42396 26.6701 -0.410245 23.5043 1.55082 21.5601L21.7651 1.52027C23.7261 -0.423875 26.8919 -0.41016 28.8361 1.5509L48.876 21.7652C50.8201 23.7262 50.8064 26.892 48.8453 28.8362L28.6311 48.876C26.67 50.8202 23.5042 50.8065 21.5601 48.8454L1.52018 28.6311Z" />
+                    </mask>
+                    <path
+                        d="M-2 25.0803L25.3159 -1.99992L-2 25.0803ZM48.876 21.7652C52.7642 25.6873 52.7368 32.0189 48.8147 35.9072L32.1512 52.4269C28.2291 56.3151 21.8975 56.2877 18.0092 52.3656L25.1109 45.3252L45.3251 25.2853C47.2862 23.3412 48.876 21.7652 48.876 21.7652ZM32.1512 52.4269C28.2291 56.3151 21.8975 56.2877 18.0092 52.3656L1.48955 35.7021C-2.39874 31.78 -2.37131 25.4484 1.55082 21.5601C1.55082 21.5601 3.12686 23.1499 5.071 25.111L25.1109 45.3252L32.1512 52.4269ZM25.3159 -1.99992L52.3961 25.316L25.3159 -1.99992Z"
+                        fill="white" mask="url(#path-1-inside-1_131_4)" />
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main>
+        <a href="https://api.whatsapp.com/send?phone=558532913675&text=Oi,%20vim%20atrav%C3%A9s%20do%20site%20e%20quero%20uma%20informa%C3%A7%C3%A3o" target="_blank" id="float-whatsapp-btn">
+            <i class="fa-whatsapp" >
+                <img src="./imagens/whatsapp.png" alt="">
+            </i>
+        </a>
+          
+        <section class="empresa " id="empresa" name="empresa">
+            <div class="texto" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h1 class="visible">
+                    Somos uma assistência técnica
+                    especializada em consertos de
+                    desktops, notebooks e impressoras
+                </h1>
+                <h4>
+                    <p>
+                        Laboratório estruturado com equipamentos de ponta e técnicos qualificados para o melhor
+                        resultado na manutenção do seu equipamento, seguindo as melhores práticas do mercado.
+                    </p>
+                    <p>
+                        Trabalhamos com componentes de alta qualidade, cuidadosamente selecionados para garantir uma
+                        melhor performance e maior tempo de vida útil para o seu equipamento.
+                    </p>
+                    <p>
+                        Tudo isso, aliado à experiência de quem já viu e solucionou os mais variados problemas em
+                        equipamentos desde 1995.
+                    </p>
+                </h4>
+                <a href="#servicos">CONHEÇA NOSSOS SERVIÇOS</a>
+            </div>
+            <div class="imagens-conheca" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img src="imagens/fotos1_e_2.png" alt="">
+            </div>
+        </section>
+
+        <h1 class="titulo">Nossos serviços</h1>
+        <section id="servicos">
+            <div id="container-titulo-servicos">
+                <div class="titulo-serv bg-serv-desktop btnativo">DESKTOPS</div>
+                <div class="titulo-serv bg-serv-notebook">NOTEBOOKS</div>
+                <div class="titulo-serv bg-serv-impressora">IMPRESSORAS</div>
+            </div>
+                <div class="descricao-serv">
+    
+                </div>
+        </section>
+
+        <h1 class="titulo">O que dizem nossos clientes</h1>
+
+        <section class="review" id="section-reviews" name="review">
+            <!-- ARQUIVO JS -->
+        </section>
+        
+        <h1 class="titulo">Localização</h1>
+        <section class="localizacao">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.9027689415757!2d-38.55484088463289!3d-3.831034644777218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c751e1e54eb81d%3A0x7b443140201925aa!2sCibern%C3%A9tica%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1675118522949!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </section>
+
+    </main>
+    <footer id="footer">
+            <div class="footer-left">
+                <img src="./imagens/logo.svg" alt="">
+                <p>Com 28 anos de expertise em conserto e montagem de computadores, a nossa loja  está aqui para ajudá-lo a obter o máximo desempenho do seu equipamento. Conte conosco para solucionar qualquer problema técnico, desde reparos básicos até configurações complexas. 
+                    Agradecemos a confiança e preferência ao longo dessas três décadas de atuação no mercado.</p>
+            </div>
+            <div class="footer-right">
+                <div class="row-footer"><img src="./imagens/icons/location.svg"/><h4>Av. i, 790 - conj. Prefeito Jose Walter
+                    Fortaleza - Ceará</h4></div>
+                <div class="row-footer"><img src="./imagens/icons/clock.svg"/> <h4>De segunda a sexta de 8:00h às 12:00h  |  13:30h às 17:30h</h4></div>
+                <div class="row-footer"><img src="./imagens/icons/phone.svg"/><h4>(85) <span>3291-3675</span></h4> </div>
+            </div>
+     </footer>
+         
+        <script>
+        AOS.init(); // COMANDO PARA INICIAR AS ANIMACOES DA DIV ENTRANDO
+        </script>
+
+        <!-- SLICK -->
+    
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+      
+        <!-- FIM SLICK  -->
+        <script src="avaliacoes.js"></script> 
+</body>
+
+</html>
