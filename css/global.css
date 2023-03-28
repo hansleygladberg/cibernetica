@@ -369,6 +369,7 @@ section.review{
     gap: 20px;
     padding: 20px 10px 30px 10px;
     justify-content: center;
+    overflow: hidden;
 }
 
 section.review .box-review{
